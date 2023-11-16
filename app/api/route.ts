@@ -14,7 +14,7 @@ export async function GET(req: Request) {
 	// return NextResponse.json( users[2].u_name )
 	const ip = (req.headers.get('x-forwarded-for') ?? '127.0.0.1').split(',')[0]
 	console.log(ip)
-	console.log(`${process.env.API_URL}/api`);
+	// console.log(`${process.env.API_URL}/api/`);
 	return NextResponse.json({ ip })
 
 	// const cookieStore = cookies();

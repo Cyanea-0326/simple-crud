@@ -41,7 +41,6 @@ export function Get_Tx() {
 		}
 		
 			try {
-				console.log(process.env.API_URL);
 				const response = await fetch(`${process.env.API_URL}/api/functions/get_tx`, {
 					method: 'POST',
 					headers: {
