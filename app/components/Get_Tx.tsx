@@ -41,7 +41,7 @@ export function Get_Tx() {
 		}
 		
 			try {
-				const response = await fetch(`${process.env.API_URL}/api/functions/get_tx`, {
+				const response = await fetch(`/api/functions/get_tx`, {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ export const Regist = () => {
 		}
 
 		try {
-			const response = await fetch(`${process.env.API_URL}/api/functions/regist`, {
+			const response = await fetch(`/api/functions/regist`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

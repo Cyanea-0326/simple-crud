@@ -31,7 +31,7 @@ export const Add_Tx = () => {
 			}
 
 			try {
-				const response = await fetch(`${process.env.API_URL}/api/functions/add_tx`, {
+				const response = await fetch(`/api/functions/add_tx`, {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ export const Exit = () => {
 			}
 
 			try {
-				const response = await fetch(`${process.env.API_URL}/api/functions/exit`, {
+				const response = await fetch(`/api/functions/exit`, {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
